@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="30dp"
+    android:background="#272727"
+    android:textAlignment="center"
+    android:layout_marginLeft="10dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#272727"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/notifi_price"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="$14.99"-->
+                <!--                    android:textSize="17sp"-->
+                <!--                    android:layout_marginLeft="4dp"-->
+                <!--                    android:fontFamily="@font/poppins_bold"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order No :"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/not_id_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="621dcd3389dc3c0d8b69e3e0"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/not_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Doan Gia Thinh"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/not_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="B6 Lô 9 Lương Nhữ Học"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/not_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="+9 16071072"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="330dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="#eea023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="parent"
+          />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/not_total"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="$ 4.29"
+                android:textAlignment="viewEnd"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="#3AE872"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ship"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/not_ship"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:text="$ 4.29"
+                android:textAlignment="viewEnd"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="#3AE872"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/not_total_amout"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="$ 4.29"
+                android:textAlignment="viewEnd"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="#3AE872"
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="330dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:background="#eea023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Status"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/not_status"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Xử lí"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="23dp"
+                android:textColor="#E73553"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

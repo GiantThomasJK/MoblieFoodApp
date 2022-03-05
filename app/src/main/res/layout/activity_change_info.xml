@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".activities.ChangeInfoActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_img_change"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_person_flat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/tran_gia_hao"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_img_change" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trangiahao0401@gmail.com"
+        android:textColor="@color/main_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/upload_picture"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/change_fullname"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.509"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btn_upload" />-->
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg_design"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="8dp"
+
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/upload_picture"
+        android:textAllCaps="false"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="UsingOnClickInXml" />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/change_fullname"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:drawablePadding="13dp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:hint="@string/full_name"-->
+<!--        android:padding="15dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_upload"-->
+<!--        app:layout_constraintWidth_percent="0.8" />-->
+
+    <!--    <EditText-->
+<!--        android:id="@+id/change_address"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:hint="Your Address"-->
+<!--        android:padding="15dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/change_phone"-->
+<!--        app:layout_constraintWidth_percent="0.8" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Full name"
+        android:textColorHint="@color/white"
+        app:boxBackgroundMode="outline"
+        android:outlineSpotShadowColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_upload">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/change_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:shadowColor="@color/white"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="548dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput_2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="@color/white"
+        app:boxBackgroundMode="outline"
+        app:counterTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:layout_editor_absoluteX="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/change_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="548dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:id="@+id/change_phone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:hint="@string/your_phone_number"-->
+<!--        android:padding="15dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/change_fullname"-->
+<!--        app:layout_constraintWidth_percent="0.8" />-->
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_bg_design"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="Save"
+        android:padding="5dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput_2"
+        app:layout_constraintVertical_bias="0.011"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

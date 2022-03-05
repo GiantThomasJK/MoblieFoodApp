@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".activities.MenuDetailActivity">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_menudetail"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:onClick="back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ganuongcay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name_dtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="5dp"
+        android:text="Spicy Chicken"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/price_dtl"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+    <TextView
+        android:id="@+id/price_dtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="5dp"
+        android:text="@string/_14_99"
+        android:textColor="#eaa023"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buy_now_dtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.525">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_access_time_filled_24" />
+
+            <TextView
+                android:id="@+id/timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="8h00 - 21h40"
+                android:textColor="#848484"
+                android:textSize="13sp" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:onClick="decrement"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_info"
+                android:textSize="20sp"
+                android:layout_marginLeft="92dp"
+
+                />
+            <TextView
+                android:id="@+id/dtlquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="30sp"
+                android:layout_marginTop="28dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="+"
+                android:onClick="increment"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_info"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            >
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_info"
+                android:drawableEnd="@drawable/ic_baseline_star_24"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="@string/_4_9"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnAddtoCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/btn_info"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Add to cart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="495dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:text="This unique mixed rice dish is made with ingredients such as meat, vegetables, and eggs. "
+                android:textAlignment="viewStart"
+                android:textColor="#848484"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="495dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buy_now_dtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_info"
+        android:drawableEnd="@drawable/ic_btn_right"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/buy_now"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
